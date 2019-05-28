@@ -16,14 +16,12 @@ build:
 
 requirements:
   host:
-    - libwapiti >=0.2.1
-    - nltk
     - pip
-    - python >=3.5
+    - python ==3.6
   run:
     - libwapiti >=0.2.1
     - nltk ==3.3
-    - python >=3.5
+    - python ==3.6
 
 test:
   imports:
