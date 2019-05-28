@@ -12,17 +12,16 @@ source:
 build:
   skip: true  # [win]
   number: 0
-  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   host:
     - pip
-    - python >3
+    - python ==3.6
   run:
     - libwapiti >=0.2.1
     - nltk ==3.3
-    - python >3
+    - python ==3.6
 
 test:
   imports:
