@@ -2,6 +2,7 @@
 {% set version = "0.7.0" %}
 
 package:
+  noarch: python
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
@@ -10,8 +11,8 @@ source:
   sha256: acb050198d8f80cc279cc66dc8438f9f5a57f8d1e5680a2826289ab03cfbb30f
 
 build:
-  skip: true  # [win]
-  number: 0
+  noarch: python
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
@@ -39,3 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - monaldoj
+    - adbeda
