@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
   run:
     - libwapiti >=0.2.1
-    - nltk ==3.3
+    - nltk >=3.3
     - python >=3.6
 
 test:
